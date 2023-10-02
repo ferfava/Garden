@@ -1,0 +1,101 @@
+/* Estilo para el cuerpo de la página */
+body {
+    background-image: url("sendero.jpeg"); /* Ruta a tu imagen de fondo */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Esto hace que la imagen de fondo no se desplace con el contenido */
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+/* Estilo para el encabezado */
+.header {
+    display: flex;
+    align-items: center; 
+    background-color: #28a745;
+    padding: 20px;
+    color: white;
+}
+
+/* Estilo para el logotipo */
+.logo-container {
+    flex: 0 0 auto; 
+}
+
+.logo {
+    max-height: 20px; 
+    width: auto; 
+    display: block;
+}
+
+/* Estilo para el título y la descripción */
+.title-container {
+    flex-grow: 1; 
+    text-align: center;
+}
+
+.top-buttons {
+    margin-bottom: 20px;
+}
+
+.top-buttons a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: white; 
+}
+
+/* Estilos para botones */
+.btn-outline-light {
+    color: white;
+    border-color: white;
+}
+
+.btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: white;
+    color: white;
+}
+
+/* Estilos para el formulario */
+.container form {
+    max-width: 50%; 
+    margin: 0 auto; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 10px; /* Agrega bordes redondeados al formulario */
+}
+
+/* Estilos para las cajas de botones */
+.card {
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px;
+    transition: background-color 0.3s ease; /
+}
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 1); 
+}
+
+/* Estilos para los botones */
+.card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #28a745;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves para fondo y color de texto */
+}
+
+.btn:hover {
+    background-color: #218838; 
+    color: white; 
+}
+
+
