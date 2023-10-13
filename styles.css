@@ -182,7 +182,6 @@ input[type=checkbox]:checked ~ .label #burg2{
 
 
 
-
 /* cards */
 
 /* Font */
@@ -292,4 +291,109 @@ img {
   font-size: 13px;
   margin-top: 35px;
   text-align: center;
+}
+
+/* Estilo para el formulario y el footer */
+
+/* Estilos específicos para el formulario */
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+}
+
+.form-container h1 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #080808;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container form {
+  margin-top: 20px;
+}
+
+/* Ajuste de color para etiquetas específicas en el formulario */
+.form-container label[for="nombre"],
+.form-container label[for="apellido"],
+.form-container label[for="correo"],
+.form-container label[for="telefono"],
+.form-container label[for="consulta"] {
+  background-color: rgb(94, 184, 94);
+  color: #ffffff;
+}
+
+.form-container label,
+.form-container input,
+.form-container textarea {
+  display: block;
+  margin-bottom: 10px;
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.form-container input[type="submit"] {
+  background-color: rgb(94, 184, 94);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: none; /* Quita cualquier transición aplicada al botón */
+}
+
+/* Ajuste de color de fondo para etiquetas específicas */
+.form-container label[for="nombre"],
+.form-container label[for="apellido"],
+.form-container label[for="correo"],
+.form-container label[for="telefono"],
+.form-container label[for="consulta"] {
+  background-color: rgb(94, 184, 94);
+}
+
+.form-container p.obligatorio {
+  color: #fa0808;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: oblique;
+  margin-top: 40px;
+}
+
+
+/* Estilo para el footer */
+
+footer {
+  background-color: rgb(94, 184, 94);
+  padding: 20px;
+  text-align: center;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.redes-sociales a {
+  margin: 0 25px;
+}
+
+.redes-sociales img {
+  width: 35px;
+  height: 35px;
+}
+
+footer p {
+  margin-top: 50px; /* Ajusta el valor del margen superior según sea necesario para separar los elementos */
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
 }
