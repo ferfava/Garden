@@ -295,7 +295,7 @@ img {
 
 /* Estilo para el formulario y el footer */
 
-/* Estilos específicos para el formulario */
+/* Estilos para el formulario */
 .form-container {
   max-width: 800px;
   margin: 0 auto;
@@ -317,7 +317,7 @@ img {
   margin-top: 20px;
 }
 
-/* Ajuste de color para etiquetas específicas en el formulario */
+/* Ajuste de color para etiquetas */
 .form-container label[for="nombre"],
 .form-container label[for="apellido"],
 .form-container label[for="correo"],
@@ -345,10 +345,10 @@ img {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: none; /* Quita cualquier transición aplicada al botón */
+  transition: none;
 }
 
-/* Ajuste de color de fondo para etiquetas específicas */
+/* Ajuste de color de fondo */
 .form-container label[for="nombre"],
 .form-container label[for="apellido"],
 .form-container label[for="correo"],
@@ -374,11 +374,19 @@ footer {
   text-align: center;
 }
 
+.redes-sociales-titulo {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 45px;
+  margin-top: 10px;
+}
+
 .redes-sociales {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .redes-sociales a {
@@ -391,8 +399,8 @@ footer {
 }
 
 footer p {
-  margin-top: 50px; /* Ajusta el valor del margen superior según sea necesario para separar los elementos */
-  font-size: 14px;
+  margin-top: 50px;
+  font-size: 10px;
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
