@@ -4,13 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ubicación - Pilar, Buenos Aires</title>
-    <link rel="stylesheet" href="ubicacion.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
+
+<header>
+    <div class="container">
+        <nav class="nav_checkbox">
+            <a href="index.html" class="logo"><h2>Garden´s Houses</h2></a>
+            <input type="checkbox" id="tab-nav" class="tab-nav">
+            <label for="tab-nav" class="label">
+                <div id="burg1" class="burger"></div>
+                <div id="burg0" class="burger"></div>
+                <div id="burg2" class="burger"></div>
+            </label>
+            <ul class="content_nav">
+                <li><a href="acerca.html">Acerca de nosostros</a></li>
+                <li><a href="galeria.html">Galería de imagenes</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+                <li><a href="contacto.html">contacto</a></li>
+            </ul>
+        </nav>
+    
+    </div>
+</header>
+
 <body>
     <video autoplay muted loop id="background-video">
-        <source src="coverr-beautiful-scenery-of-an-autumn-forest-4217-1080p.mp4" type="video/mp4">
+        <source src="img/coverr-beautiful-scenery-of-an-autumn-forest-4217-1080p.mp4" type="video/mp4">
         Tu navegador no admite la reproducción de videos.
     </video>
+    <!--
     <nav>
         <ul class="nav-buttons">
             <li><a href="index.html">Inicio</a></li>
@@ -19,6 +42,7 @@
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
+    -->
     <main>
         <div class="map-container">
             <iframe

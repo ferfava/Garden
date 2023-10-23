@@ -3,6 +3,8 @@ const gallery = document.querySelector('.gallery');
 const images = document.querySelectorAll('.gallery img');
 let currentIndex = 0;
 
+console.log(images.length)
+
 // Función para mostrar la imagen siguiente con animación
 function showNextImage() {
   if (currentIndex < images.length - 1) {
@@ -31,9 +33,9 @@ function updateGalleryWithAnimation() {
 }
 
 // Elimina la animación cuando se complete la transición
-gallery.addEventListener('transitionend', () => {
-  gallery.style.transition = 'none';
-});
+//gallery.addEventListener('transitionend', () => {
+//  gallery.style.transition = 'none';
+// });
 
 // Escuchar eventos para navegación
 document.querySelector('.next-button').addEventListener('click', showNextImage);

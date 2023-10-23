@@ -9,7 +9,6 @@
 /* Estilo para el encabezado */
 
 header{
-
     position: fixed;
     top: 0;
     z-index: 1;
@@ -19,7 +18,6 @@ header{
 }
 
 .container{
-
     width: 1280px;
     margin: auto;
 
@@ -125,7 +123,7 @@ input[type=checkbox]:checked ~ .label #burg2{
 .content_section{
 
     height: 80vh;
-    background-image: url(./casamedium.jpg);
+    background-image: url(img/casamedium.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -181,8 +179,6 @@ input[type=checkbox]:checked ~ .label #burg2{
 }
 
 
-
-
 /* cards */
 
 /* Font */
@@ -197,11 +193,11 @@ input[type=checkbox]:checked ~ .label #burg2{
 
 
 
-.main{
+/* .main{
   max-width: 1200px;
   margin: 0 auto;
 }
-
+*/
 h1 {
     font-size: 24px;
     font-weight: 400;
@@ -295,6 +291,81 @@ img {
 }
 
 
+.map-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+  padding-top: 150px;
+}
+/* Estilo para la caja de contenido */
+.content-box {
+  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.content-box p {
+  color: #ffffff; /* Texto en color blanco */
+  font-size: 25px;
+  line-height: 1.5;
+}
+
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; /* Coloca el video detrás del contenido */
+}
+
+.gallery-container {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.gallery {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  margin: 20px; /* Aumento del margen */
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  margin-right: 10px; /* Mayor margen entre las imágenes */
+}
+
+/* Estilos para los botones "Anterior" y "Siguiente" */
+.prev-button, .next-button {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.prev-button {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.next-button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.prev-button:hover, .next-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
 
 
 
