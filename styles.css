@@ -367,5 +367,116 @@ img {
   background: rgba(0, 0, 0, 0.8);
 }
 
+/* Estilo para el formulario y el footer */
+
+/* Estilo para el formulario*/
+p.obligatorio {
+  color: #fa0808;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: oblique;
+  margin-top: 40px;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  color: #0a0a0a;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #080808;
+  text-align: center;
+}
+
+form {
+  margin-top: 80px;
+}
+
+/* Ajusta el color de las etiquetas específicas */
+
+label[for="nombre"],
+label[for="apellido"],
+label[for="correo"],
+label[for="telefono"],
+label[for="consulta"] {
+  background-color: rgb(94, 184, 94);
+  color: #ffffff;
+
+}
+
+label,
+input,
+textarea {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: rgb(94, 184, 94);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(94, 184, 94); /* Mantiene el mismo color de fondo al pasar el cursor sobre el botón */
+}
+
+/* Cambia el color de fondo de los labels específicos */
+
+label[for="nombre"],
+label[for="apellido"],
+label[for="correo"],
+label[for="telefono"],
+label[for="consulta"] {
+  background-color: rgb(94, 184, 94);
+}
+
+/* Estilo para el footer */
+
+footer {
+  background-color: rgb(94, 184, 94);
+  padding: 20px;
+  text-align: center;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.redes-sociales a {
+  margin: 0 25px;
+}
+
+.redes-sociales img {
+  width: 35px;
+  height: 35px;
+}
+
+footer p {
+  margin-top: 50px; /* Ajusta el valor del margen superior según sea necesario para separar los elementos */
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
 
 
