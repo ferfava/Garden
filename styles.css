@@ -527,3 +527,37 @@ footer p {
   margin-right: 10px;
   color: green ;
 }
+.about-us{
+  background-color: rgb(94, 184, 94, 0.8);
+  color: white;
+  margin: 50px;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 50px;
+  border: 10px solid;
+  text-align: justify;
+  }
+
+  .quienessomos{
+    margin:20px;
+    padding: 15px;
+  }
+
+  .proposito{
+    margin: 20px;
+    padding: 15px;
+  }
+  .dondeestamos{
+    margin: 20px;
+    padding: 15px;
+  }
+  .clientes{
+    color:rgb(94, 184, 94);
+    background-color: white;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+   text-align: center;
+  }
