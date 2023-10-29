@@ -2,9 +2,8 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="./styles.css">
-  <link rel="icon" type="image/png" href="HG.ico">
-  <script src="galeria-script.js"></script>
-</head>
+  <link rel="icon" type="image/png" href="img/HG.ico">
+  </head>
 <header>
   <div class="container">
       <nav class="nav_checkbox">
@@ -25,24 +24,99 @@
   
   </div>
 </header>
-<body>  
-  <section class="content_section">
-    <div class="gallery-container">
-      <button class="prev-button">Anterior</button>
-      <div class="gallery">
-        <img src="img/cabaña rustica.jpg" alt="Imagen 1">
-        <img src="img/carpa-noche-glamping.jpg" alt="Imagen 2">
-        <img src="img/glamping.png" alt="Imagen 3">
-        <img src="img/experiencia.jpg" alt="Imagen 4">
-        <img src="img/carpa-noche-glamping.jpg" alt="Imagen 5">
-        <img src="img/cabaña-del-abosque.jpeg" alt="Imagen 6">
-        <img src="img/dreamhouse.jpg" alt="Imagen 7">
+<body>
+  <div class="carrusel">
+      <div class="atras">
+          <img id="atras" src="img/atras.svg" alt="atras">
       </div>
-      <button class="next-button">Siguiente</button>
-    </div>
-  </section>
-  
+
+      <div class="imagenes">
+          <div id="img">
+              <img class="img" src="img/img1.webp" alt="imagen 1">
+          </div>
+      </div>
+
+      <div class="adelante" id="adelante">
+          <img src="img/adelante.svg" alt="adelante">
+      </div>
+  </div>
+  <div class="puntos" id="puntos"></div>
+
+  <script>
+    let imagenes = [
+    {"url": "img/img1.webp"},
+    {"url": "img/img2.webp"},
+    {"url": "img/img3.webp"},
+    {"url": "img/img4.webp"},
+    {"url": "img/img5.webp"},
+    {"url": "img/img6.webp"},
+    {"url": "img/img7.webp"},
+    {"url": "img/img8.webp"},
+    {"url": "img/img9.webp"},
+    {"url": "img/img10.webp"},
+  ]
+console.log(imagenes);
+console.log(imagenes.length);
+
+
+let atras = document.getElementById('atras');
+let adelante = document.getElementById('adelante');
+let imagen = document.getElementById('img');
+let puntos = document.getElementById('puntos');
+let actual = 0
+
+  posicionCarrusel()
+
+  atras.addEventListener('click', function(){
+    actual -=1
+
+    if (actual == -1){
+        actual = imagenes.length - 1
+    }
+
+    imagen.innerHTML = ` <img class="img" src="${imagenes[actual].url}" alt="logo pagina"></img>`
+    posicionCarrusel()
+}) 
+
+adelante.addEventListener('click', function(){
+    actual +=1
+
+    if (actual == imagenes.length){
+        actual = 0
+    }
+
+    imagen.innerHTML = ` <img class="img" src="${imagenes[actual].url}" alt="logo pagina"></img>`
+    posicionCarrusel()
+})  
+
+function posicionCarrusel() {
+    puntos.innerHTML = ""
+    for (var i = 0; i <imagenes.length; i++){
+        if(i == actual){
+            puntos.innerHTML += '<p class="bold">.<p>'
+        }
+        else{
+            puntos.innerHTML += '<p>.<p>'
+        }
+    } 
+}
+ 
+setInterval(() => {
+  actual = actual + 1
+  if (actual < imagenes.length){  
+  imagen.innerHTML = ` <img class="img" src="${imagenes[actual].url}" alt="logo pagina"></img>` 
+  posicionCarrusel() }
+  else{
+    actual = -1
+  }
+}, 3000);
+
+
+console.log(actual)
+
+</script>
 </body>
+
 </html>
 
 
