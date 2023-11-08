@@ -67,8 +67,19 @@
         <p>&copy; 2023 Garden's Houses</p>
     </div>
 </footer>
-
 <body>
-    
+ <script>
+    document.getElementById("miFormulario").addEventListener("submit", function(event) {
+        var nombre = document.getElementById("nombre").value;
+        var apellido = document.getElementById("apellido").value;
+        var correo = document.getElementById("correo").value;
+        var consulta = document.getElementById("consulta").value;
+
+        if (nombre.trim() === "" || apellido.trim() === "" || correo.trim() === "" || consulta.trim() === "") {
+            alert("Por favor, complete todos los campos obligatorios.");
+            event.preventDefault(); 
+        }
+    });
+</script>
 </body>
 </html>
