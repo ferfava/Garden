@@ -33,23 +33,24 @@
 
     <h1>Contactanos</h1>
 
-    <form action="https://formspree.io/f/xleyzklq" method="POST">
+     
+    <form id="miFormulario" action="https://formspree.io/f/xleyzklq" method="post"  >
         <label for="nombre">Nombre*:</label>
-        <input type="text" id="nombre" name="nombre" required><br><br>
+        <input type="text" id="nombre" name="nombre" ><br><br>
 
         <label for="apellido">Apellido*:</label>
-        <input type="text" id="apellido" name="apellido" required><br><br>
+        <input type="text" id="apellido" name="apellido" ><br><br>
 
         <label for="correo">Correo Electrónico*:</label>
-        <input type="email" id="correo" name="correo" required><br><br>
+        <input type="email" id="correo" name="correo" ><br><br>
 
         <label for="telefono">Teléfono (opcional):</label>
         <input type="tel" id="telefono" name="telefono"><br><br>
 
         <label for="consulta">Consulta*:</label><br>
-        <textarea id="consulta" name="consulta" rows="4" cols="50" required></textarea><br><br>
+        <textarea id="consulta" name="consulta" rows="4" cols="50" ></textarea><br><br>
 
-        <input type="submit" value="Enviar" class="btn card_btn">
+        <input type="submit" id = "enviar" value="Enviar" class="btn card_btn">
     </form>
 
     <p class="obligatorio">*Campos obligatorios</p>
@@ -69,17 +70,28 @@
 </footer>
 <body>
  <script>
-    document.getElementById("miFormulario").addEventListener("submit", function(event) {
-        var nombre = document.getElementById("nombre").value;
-        var apellido = document.getElementById("apellido").value;
-        var correo = document.getElementById("correo").value;
-        var consulta = document.getElementById("consulta").value;
+document.getElementById("miFormulario").addEventListener("submit", (enviar)) 
 
-        if (nombre.trim() === "" || apellido.trim() === "" || correo.trim() === "" || consulta.trim() === "") {
-            alert("Por favor, complete todos los campos obligatorios.");
-            event.preventDefault(); 
-        }
-    });
+function enviar(e)  {
+e.preventDefault();
+var nombre = document.getElementById("nombre").value;
+var apellido = document.getElementById("apellido").value;
+var correo = document.getElementById("correo").value;
+var consulta = document.getElementById("consulta").value;
+
+console.log (nombre)
+console.log (apellido)
+console.log (correo)
+console.log (consulta)
+
+if (nombre === "" || apellido === "" || correo === "" || consulta === "") {
+   alert("Por favor, complete todos los campos obligatorios.");
+
+}
+   }
+
 </script>
 </body>
 </html>
+
+<!--  -->
