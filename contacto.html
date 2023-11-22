@@ -34,7 +34,7 @@
     <h1>Contactanos</h1>
 
      
-    <form id="miFormulario" action="https://formspree.io/f/xleyzklq" method="post"  >
+    <form action="https://formspree.io/f/xleyzklq" method="post" id="miFormulario">
         <label for="nombre">Nombre*:</label>
         <input type="text" id="nombre" name="nombre" ><br><br>
 
@@ -70,7 +70,12 @@
 </footer>
 <body>
  <script>
-document.getElementById("miFormulario").addEventListener("submit", (enviar)) 
+//document.getElementById("miFormulario").addEventListener("submit", (enviar)) 
+
+document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("miFormulario").addEventListener("submit",
+enviar);
+    });
 
 function enviar(e)  {
 e.preventDefault();
@@ -86,8 +91,14 @@ console.log (consulta)
 
 if (nombre === "" || apellido === "" || correo === "" || consulta === "") {
    alert("Por favor, complete todos los campos obligatorios.");
+return false
 
 }
+document.getElementById("miFormulario").submit();
+
+        alert("¡Gracias por contactarte con nosotros!");
+
+        return true;
    }
 
 </script>
